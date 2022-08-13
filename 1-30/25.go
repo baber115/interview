@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 /**
 关于 cap() 函数的适用类型，下面说法正确的是()
 A. array
@@ -11,5 +13,6 @@ D. channel
 cap不适用于map
 */
 func main() {
-
+	m := make(map[int]int, 10)
+	fmt.Println(cap(m))
 }
